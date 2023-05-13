@@ -21,9 +21,9 @@
         <h2>Sign in to Bwitter</h2>
 
         <form action="/sessions" method="post">
-          <?php if(isset($_GET["return"])) ?>
+          <?php if(isset($_GET["return"])) { ?>
           <input type="hidden" name="return" value="<?=htmlspecialchars($_GET["return"])?>">
-          <?php ?>
+          <?php } ?>
           <fieldset>
             <table cellspacing="0">
               <tr>
